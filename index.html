@@ -1,194 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Triple P Pools - Your trusted partner for pool openings, weekly maintenance, and leak detection services.">
-    <title>Triple P Pools</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            padding: 0;
-            background: linear-gradient(to bottom, #e6f7ff, #b3ecff);
-            border-bottom: 3px solid #00aaff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        header img {
-            width: 100%;
-            max-height: 200px;
-            object-fit: contain;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #007acc;
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #005f99;
-            border-radius: 5px;
-        }
-
-        .hero {
-            background: url('https://www.desertmountainpoolcare.com/wp-content/uploads/2020/03/desert-pool-hero.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-        }
-
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: #007acc;
-        }
-
-        section p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 40px;
-        }
-
-        .service-card {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .service-card h3 {
-            color: #007acc;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(to top, #e6f7ff, #b3ecff);
-            border-top: 3px solid #00aaff;
-        }
-
-        footer h3 {
-            font-size: 1.5rem;
-            color: #007acc;
-        }
-
-        .contact-info {
-            margin-top: 10px;
-            font-size: 1rem;
-        }
-
-        .contact-info a {
-            color: #007acc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        @media (min-width: 768px) {
-            nav {
-                justify-content: space-evenly;
-            }
-
-            section {
-                padding: 60px 80px;
-                text-align: left;
-            }
-
-            section p {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
+    <meta name="description" content="Your trusted partner in professional pool care and maintenance.">
+    <title>Professional Pool Business</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-       <img src="Logo Hewaader.png" alt="Triple P Pools Logo">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Professional Pool Business Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="hero">
-        <h1>Triple P Pools</h1>
-        <p>Experience professional pool care services you can trust.</p>
-    </div>
-
-    <nav>
-        <a href="#pool-openings">Pool Openings</a>
-        <a href="#weekly-service">Weekly Service</a>
-        <a href="#leak-detection">Leak Detection & Construction</a>
-    </nav>
-
-    <section id="pool-openings">
-        <h2>Pool Openings</h2>
-        <p>Get your pool ready for the season with our expert opening services. We ensure your pool is clean, operational, and ready for use in no time!</p>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Professional Pool Care You Can Trust</h1>
+            <p>We provide reliable pool maintenance and repair services to keep your pool sparkling all year long.</p>
+            <a href="#contact" class="btn">Get a Free Quote</a>
+        </div>
     </section>
 
-    <section id="weekly-service">
-        <h2>Weekly Service</h2>
-        <p>Keep your pool in top condition with our weekly maintenance. Services include thorough vacuuming and precise chemical checks to ensure water safety.</p>
+    <section id="services" class="container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="service1.jpg" alt="Pool Cleaning">
+                <h3>Pool Cleaning</h3>
+                <p>Comprehensive cleaning services to keep your pool crystal clear.</p>
+            </div>
+            <div class="service-item">
+                <img src="service2.jpg" alt="Repairs">
+                <h3>Repairs</h3>
+                <p>Expert repair services for all pool equipment and structures.</p>
+            </div>
+            <div class="service-item">
+                <img src="service3.jpg" alt="Chemical Balancing">
+                <h3>Chemical Balancing</h3>
+                <p>Ensuring the perfect water chemistry for safe and enjoyable swimming.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="leak-detection">
-        <h2>Leak Detection & Construction</h2>
-        <p>We specialize in advanced leak detection and pool construction services to meet your unique needs. Whether it's a small repair or a complete overhaul, we’ve got you covered.</p>
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>With years of experience, our team is dedicated to providing exceptional pool care services tailored to your needs. We take pride in our professionalism, attention to detail, and commitment to customer satisfaction.</p>
+    </section>
+
+    <section id="testimonials" class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"Amazing service! My pool has never looked better. Highly recommend!"</p>
+            <cite>- Sarah L.</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Professional and reliable. They handle everything, so I don’t have to worry about a thing."</p>
+            <cite>- Mark D.</cite>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Ready to transform your pool? Get in touch with us today!</p>
+        <form action="submit-form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <h3>Contact Us</h3>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:tripleppools1972@gmail.com">tripleppools1972@gmail.com</a></p>
-            <p>Phone: <a href="tel:5167846065">516-784-6065</a></p>
-            <p>Owner: Eddie Perez</p>
+        <div class="container">
+            <p>&copy; 2025 Professional Pool Business. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+            </ul>
         </div>
     </footer>
 </body>
+
 </html>
