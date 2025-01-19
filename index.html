@@ -19,12 +19,15 @@
             padding: 0;
             background: linear-gradient(to bottom, #e6f7ff, #b3ecff);
             border-bottom: 3px solid #00aaff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         header img {
             width: 100%;
-            height: auto;
-            display: block;
+            max-height: 200px;
+            object-fit: contain;
         }
 
         nav {
@@ -48,6 +51,22 @@
             border-radius: 5px;
         }
 
+        .hero {
+            background: url('https://www.desertmountainpoolcare.com/wp-content/uploads/2020/03/desert-pool-hero.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
         section {
             padding: 40px 20px;
             text-align: center;
@@ -62,6 +81,31 @@
         section p {
             font-size: 1rem;
             margin-bottom: 20px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #007acc;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -111,6 +155,11 @@
     <header>
        <img src="Logo Hewaader.png" alt="Triple P Pools Logo">
     </header>
+
+    <div class="hero">
+        <h1>Triple P Pools</h1>
+        <p>Experience professional pool care services you can trust.</p>
+    </div>
 
     <nav>
         <a href="#pool-openings">Pool Openings</a>
